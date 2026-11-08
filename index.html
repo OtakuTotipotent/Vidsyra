@@ -7,28 +7,32 @@
     <meta name="description" content="Discover video content and inspiration with Vidsyra.">
     <meta name="keywords" content="Vidsyra, video, videos, video discovery, Youtube">
 
-    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./static/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
     <title>Vidsyra</title>
 </head>
 
 <body
-    class="bg-gray-900 text-gray-200 w-dvw h-dvh selection:bg-indigo-500/80 selection:text-black antialiased transition-all">
+    class="bg-gray-900 text-gray-100 w-dvw h-dvh selection:bg-indigo-500 selection:text-black antialiased transition-all">
 
     <!-- navigation -->
     <nav class="flex items-center justify-between gap-4 p-4 bg-gray-950/50 shadow-sm shadow-gray-800/30">
         <div class="select-none cursor-default">
-            <span class="p-2 rounded-md bg-indigo-500/80 font-bold text-gray-950/80">
+            <span class="px-2 py-1 rounded-sm bg-indigo-600 text-gray-950 font-bold inline-block text-center">
                 V
             </span>
-            <span class="px-2 text-indigo-500 uppercase font-bold">
-                Vidsyra
+            <span class="px-2 text-indigo-500 font-bold">
+                VIDSYRA
             </span>
         </div>
         <div>
-            <a href="#" class="px-2 text-gray-200 hover:text-indigo-400">
+            <a href="#" class="px-2 text-white hover:text-indigo-400">
                 Login
             </a>
-            <a href="#" class="px-2 text-gray-200 hover:text-indigo-400">
+            <a href="#" class="px-2 text-white hover:text-indigo-400">
                 About
             </a>
         </div>
@@ -42,8 +46,8 @@
         </marquee>
 
         <!-- user inputs -->
-        <section class="w-full sm:max-w-3xl m-auto my-5 p-6 shadow-sm shadow-gray-950 rounded-xl">
-            <h1 class="font-semibold text-xl sm:text-3xl text-indigo-500">
+        <section class="w-full my-5 p-3 sm:p-6 border border-gray-700/50 rounded-xl">
+            <h1 class="font-bold text-xl sm:text-3xl text-indigo-500">
                 Unlock the Intelligence Behind Every Video.
             </h1>
 
@@ -51,21 +55,144 @@
                 Explore. Analyze. Learn. Create. Share.
             </p>
 
-            <form method="get">
-                <input type="text" name="link" id="link" placeholder="Paste a video link to get started..."
-                    class="w-full outline-none rounded-lg py-2 px-4 my-2 bg-gray-500/20 text-indigo-400 placeholder:text-indigo-400/80">
+            <form method="get" class="flex bg-gray-800 text-indigo-500 font-semibold rounded-lg overflow-hidden">
+                <input type="text" name="link" id="link" placeholder="Paste a video link to get started..." required
+                    class="grow outline-none px-3 py-2 placeholder:text-gray-500 placeholder:font-normal">
+                <button type="submit" class="px-3 py-2 hover:bg-indigo-500 hover:text-white cursor-pointer">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </button>
             </form>
 
-            <div class="my-2 flex gap-2 flex-wrap">
-                <span class="py-0.5 px-2 bg-indigo-900/80 text-white/80 rounded-full text-sm">
+            <div class="my-3 flex gap-2 flex-wrap">
+                <span class="py-0.5 px-2 bg-gray-800 text-indigo-500 font-semibold rounded-full text-sm">
                     AI Insights
                 </span>
-                <span class="py-0.5 px-2 bg-indigo-900/80 text-white/80 rounded-full text-sm">
+                <span class="py-0.5 px-2 bg-gray-800 text-indigo-500 font-semibold rounded-full text-sm">
                     Video Tools
                 </span>
-                <span class="py-0.5 px-2 bg-indigo-900/80 text-white/80 rounded-full text-sm">
+                <span class="py-0.5 px-2 bg-gray-800 text-indigo-500 font-semibold rounded-full text-sm">
                     Creator Intelligence
                 </span>
+            </div>
+        </section>
+
+        <!-- user outputs -->
+        <section class="w-full my-5 p-3 sm:p-6 bg-gray-800/50 border border-gray-700/50 rounded-xl space-y-6">
+            <!-- output interface -->
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_2fr_1fr] gap-4">
+
+                <!-- video -->
+                <div class="min-w-0">
+                    <video src="#" controls muted class="w-full h-64 md:h-52 rounded-lg"></video>
+                </div>
+
+                <!-- analysis -->
+                <div class="min-w-0 flex flex-col gap-3">
+                    <span class="bg-green-500/50 rounded-full px-3 w-fit">Analysis Complete</span>
+
+                    <h3 class="font-semibold text-lg capitalize">
+                        The title of the video is shown here
+                    </h3>
+
+                    <p class="text-gray-400 text-sm">
+                        A complete analysis of the given video,
+                        with key insights and takeaways.
+                    </p>
+
+                    <!-- metadata -->
+                    <div class="flex flex-wrap gap-2 text-sm capitalize">
+                        <span class="bg-gray-500/50 rounded-full px-2">Nov 08, 2026</span>
+                        <span class="bg-gray-500/50 rounded-full px-2">256K views</span>
+                        <span class="bg-gray-500/50 rounded-full px-2">12 min</span>
+                    </div>
+
+                    <!-- actions -->
+                    <div class="flex flex-wrap gap-2">
+                        <a href="#" class="bg-indigo-500 px-3 py-1 rounded-md hover:bg-indigo-600">
+                            Download
+                        </a>
+
+                        <a href="#"
+                            class="border border-indigo-500 text-indigo-400 px-3 py-1 rounded-md hover:opacity-80">
+                            Get Blog
+                        </a>
+
+                        <a href="#"
+                            class="border border-indigo-500 text-indigo-400 px-3 py-1 rounded-md hover:opacity-80">
+                            Share
+                        </a>
+                    </div>
+                </div>
+
+                <!-- source info -->
+                <div class="min-w-0 space-y-2">
+                    <h3 class="font-semibold border-b pb-1 border-gray-500/50 text-indigo-400">Quick Info.</h3>
+
+                    <div class="flex flex-col gap-1">
+                        <div class="overflow-hidden">
+                            <span class="text-gray-400 text-sm">Channel</span>
+                            <p class="text-nowrap">Channel name is here</p>
+                        </div>
+
+                        <div class="overflow-hidden">
+                            <span class="text-gray-400 text-sm">Category</span>
+                            <p class="text-nowrap">Niche of given video</p>
+                        </div>
+
+                        <div class="overflow-hidden">
+                            <span class="text-gray-400 text-sm">Tags</span>
+                            <div class="flex gap-1 flex-wrap overflow-hidden text-sm">
+                                <span>#keyword</span>
+                                <span>#keyword</span>
+                                <span>#keyword</span>
+                                <!-- no more than 3 keywords -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- output suggestions -->
+            <div class="border-t border-gray-700 pt-5 space-y-4">
+
+                <div class="flex items-center justify-between">
+                    <h3 class="font-semibold">
+                        Related Suggestions
+                    </h3>
+
+                    <a href="#" class="text-indigo-400 text-sm">
+                        View More →
+                    </a>
+                </div>
+
+                <!-- suggestion cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+                    <div class="flex items-center gap-3">
+                        <img src="#" alt="Suggested video" class="w-24 aspect-video object-cover rounded-lg" height=""
+                            width="">
+                        <p>Video Title</p>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <img src="#" alt="Suggested video" class="w-24 aspect-video object-cover rounded-lg" width=""
+                            height="">
+                        <p>Video Title</p>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <img src="#" alt="Suggested video" class="w-24 aspect-video object-cover rounded-lg" width=""
+                            height="">
+                        <p>Video Title</p>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <img src="#" alt="Suggested video" class="w-24 aspect-video object-cover rounded-lg" width=""
+                            height="">
+                        <p>Video Title</p>
+                    </div>
+                </div>
             </div>
         </section>
 
