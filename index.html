@@ -19,22 +19,24 @@
     class="bg-gray-900 text-gray-100 w-dvw h-dvh selection:bg-indigo-500 selection:text-black antialiased transition-all">
 
     <!-- navigation -->
-    <nav class="flex items-center justify-between gap-4 p-4 bg-gray-950/50 shadow-sm shadow-gray-800/30">
-        <div class="select-none cursor-default">
-            <span class="px-2 py-1 rounded-sm bg-indigo-600 text-gray-950 font-bold inline-block text-center">
-                V
-            </span>
-            <span class="px-2 text-indigo-500 font-bold">
-                VIDSYRA
-            </span>
-        </div>
-        <div>
-            <a href="#" class="px-2 text-white hover:text-indigo-400">
-                Login
-            </a>
-            <a href="#" class="px-2 text-white hover:text-indigo-400">
-                About
-            </a>
+    <nav class=" bg-gray-950/50 shadow-sm shadow-gray-800/30">
+        <div class="max-w-6xl m-auto flex items-center justify-between gap-4 p-4">
+            <div class="select-none cursor-default">
+                <span class="px-2 py-1 rounded-sm bg-indigo-600 text-gray-950 font-bold inline-block text-center">
+                    V
+                </span>
+                <span class="px-2 text-indigo-500 font-bold">
+                    VIDSYRA
+                </span>
+            </div>
+            <div>
+                <a href="#" class="px-2 text-white hover:text-indigo-400">
+                    Login
+                </a>
+                <a href="#" class="px-2 text-white hover:text-indigo-400">
+                    About
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -82,19 +84,19 @@
             <div class="grid grid-cols-1 md:grid-cols-[2fr_2fr_1fr] gap-4">
 
                 <!-- video -->
-                <div class="min-w-0">
-                    <video src="#" controls muted class="w-full h-64 md:h-52 rounded-lg"></video>
+                <div class="min-w-0 h-64 md:h-52 rounded-lg overflow-hidden bg-black">
+                    <video src="./public/01.mp4" controls muted poster class="w-full aspect-video rounded-lg"></video>
                 </div>
 
                 <!-- analysis -->
                 <div class="min-w-0 flex flex-col gap-3">
                     <span class="bg-green-500/50 rounded-full px-3 w-fit">Analysis Complete</span>
 
-                    <h3 class="font-semibold text-lg capitalize">
+                    <h3 class="font-semibold text-lg capitalize truncate">
                         The title of the video is shown here
                     </h3>
 
-                    <p class="text-gray-400 text-sm">
+                    <p class="text-gray-400 text-sm line-clamp-2">
                         A complete analysis of the given video,
                         with key insights and takeaways.
                     </p>
@@ -126,21 +128,21 @@
 
                 <!-- source info -->
                 <div class="min-w-0 space-y-2">
-                    <h3 class="font-semibold border-b pb-1 border-gray-500/50 text-indigo-400">Quick Info.</h3>
+                    <h3 class="font-semibold border-b pb-1 border-gray-500/30 text-indigo-500">Quick Info.</h3>
 
                     <div class="flex flex-col gap-1">
-                        <div class="overflow-hidden">
-                            <span class="text-gray-400 text-sm">Channel</span>
-                            <p class="text-nowrap">Channel name is here</p>
+                        <div>
+                            <span class="text-gray-400 text-sm">CHANNEL</span>
+                            <p class="truncate capitalize">Channel name</p>
                         </div>
 
-                        <div class="overflow-hidden">
-                            <span class="text-gray-400 text-sm">Category</span>
-                            <p class="text-nowrap">Niche of given video</p>
+                        <div>
+                            <span class="text-gray-400 text-sm">CATEGORY</span>
+                            <p class="truncate capitalize">Niche of video</p>
                         </div>
 
-                        <div class="overflow-hidden">
-                            <span class="text-gray-400 text-sm">Tags</span>
+                        <div>
+                            <span class="text-gray-400 text-sm">TAGS</span>
                             <div class="flex gap-1 flex-wrap overflow-hidden text-sm">
                                 <span>#keyword</span>
                                 <span>#keyword</span>
@@ -154,44 +156,55 @@
             </div>
 
             <!-- output suggestions -->
-            <div class="border-t border-gray-700 pt-5 space-y-4">
+            <div class="border-t border-gray-500/30 pt-5 space-y-4">
 
                 <div class="flex items-center justify-between">
-                    <h3 class="font-semibold">
+                    <h3 class="font-semibold text-indigo-500">
                         Related Suggestions
                     </h3>
 
-                    <a href="#" class="text-indigo-400 text-sm">
+                    <a href="#" class="text-indigo-500 text-sm hover:text-indigo-400">
                         View More →
                     </a>
                 </div>
 
                 <!-- suggestion cards -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <a href="./public/suggestion.jpg"
+                        class="flex items-center gap-4 bg-gray-950/20 rounded-lg cursor-pointer hover:bg-gray-950/50 overflow-hidden">
+                        <img src="./public/suggestion.jpg" alt="Suggestion"
+                            class="w-36 aspect-video object-cover rounded-lg" height="" width="">
+                        <p class="line-clamp-2 pr-2 text-gray-400">
+                            Video Title is displayed here
+                        </p>
+                    </a>
 
-                    <div class="flex items-center gap-3">
-                        <img src="#" alt="Suggested video" class="w-24 aspect-video object-cover rounded-lg" height=""
-                            width="">
-                        <p>Video Title</p>
-                    </div>
+                    <a href="./public/suggestion.jpg"
+                        class="flex items-center gap-4 bg-gray-950/20 rounded-lg cursor-pointer hover:bg-gray-950/50 overflow-hidden">
+                        <img src="./public/suggestion.jpg" alt="Suggestion"
+                            class="w-36 aspect-video object-cover rounded-lg" height="" width="">
+                        <p class="line-clamp-2 pr-2 text-gray-400">
+                            Video Title is displayed here
+                        </p>
+                    </a>
 
-                    <div class="flex items-center gap-3">
-                        <img src="#" alt="Suggested video" class="w-24 aspect-video object-cover rounded-lg" width=""
-                            height="">
-                        <p>Video Title</p>
-                    </div>
+                    <a href="./public/suggestion.jpg"
+                        class="flex items-center gap-4 bg-gray-950/20 rounded-lg cursor-pointer hover:bg-gray-950/50 overflow-hidden">
+                        <img src="./public/suggestion.jpg" alt="Suggestion"
+                            class="w-36 aspect-video object-cover rounded-lg" height="" width="">
+                        <p class="line-clamp-2 pr-2 text-gray-400">
+                            Video Title is displayed here
+                        </p>
+                    </a>
 
-                    <div class="flex items-center gap-3">
-                        <img src="#" alt="Suggested video" class="w-24 aspect-video object-cover rounded-lg" width=""
-                            height="">
-                        <p>Video Title</p>
-                    </div>
-
-                    <div class="flex items-center gap-3">
-                        <img src="#" alt="Suggested video" class="w-24 aspect-video object-cover rounded-lg" width=""
-                            height="">
-                        <p>Video Title</p>
-                    </div>
+                    <a href="./public/suggestion.jpg"
+                        class="flex items-center gap-4 bg-gray-950/20 rounded-lg cursor-pointer hover:bg-gray-950/50 overflow-hidden">
+                        <img src="./public/suggestion.jpg" alt="Suggestion"
+                            class="w-36 aspect-video object-cover rounded-lg" height="" width="">
+                        <p class="line-clamp-2 pr-2 text-gray-400">
+                            Video Title is displayed here
+                        </p>
+                    </a>
                 </div>
             </div>
         </section>
