@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover video content and inspiration with Vidsyra.">
+    <meta name="keywords" content="Vidsyra, video, videos, video discovery, Youtube">
+
+    <link rel="stylesheet" href="../static/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <title>Vidsyra | Login</title>
+</head>
+
+<body
+    class="bg-gray-900 text-gray-100 w-dvw h-dvh selection:bg-indigo-500 selection:text-black antialiased transition-all">
+
+    <!-- navigation -->
+    <nav class=" bg-gray-950/50 shadow-sm shadow-gray-800/30">
+        <div class="max-w-6xl m-auto flex items-center justify-between gap-4 p-4">
+            <div class="select-none cursor-default">
+                <span class="px-2 py-1 rounded-sm bg-indigo-600 text-gray-950 font-bold inline-block text-center">
+                    V
+                </span>
+                <span class="px-2 text-indigo-500 font-bold">
+                    VIDSYRA
+                </span>
+            </div>
+            <div>
+                <a href="/" class="px-2 text-white hover:text-indigo-400">
+                    Home
+                </a>
+                <a href="/pages/logout.html" class="px-2 text-white hover:text-indigo-400">
+                    Signup
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- login form -->
+    <main class="flex items-center justify-center">
+        <form class="bg-gray-950 p-8 shadow-md rounded-2xl max-w-md w-full mt-16 space-y-4">
+            <h2 class="text-center text-indigo-500 font-bold text-2xl">Welcome to Vidsyra</h2>
+
+            <div class="flex flex-col gap-3">
+                <label for="username" class="font-medium">Username</label>
+                <input type="text" name="username" id="username" placeholder="Enter your username here" required
+                    class="bg-gray-800/80 font-semibold rounded-sm px-3 py-2 placeholder:text-gray-500 placeholder:font-normal outline-none text-center">
+            </div>
+
+            <div class="flex flex-col gap-3">
+                <label for="password" class="font-medium">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password here" required
+                    class="bg-gray-800/80 font-semibold rounded-sm px-3 py-2 placeholder:text-gray-500 placeholder:font-normal outline-none text-center">
+            </div>
+
+            <button type="submit"
+                class="w-full mt-4 font-semibold rounded-sm px-2 py-2 border border-gray-500/40 cursor-pointer hover:border-indigo-500/50 hover:text-indigo-500">Login</button>
+        </form>
+    </main>
+
+</body>
+
+</html>
