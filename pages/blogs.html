@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore articles on artificial intelligence, science, technology, education, research, and more with Vidsyra.">
+    <meta name="description" content="Discover video content and inspiration with Vidsyra.">
+    <meta name="keywords" content="Vidsyra, video, videos, video discovery, Youtube">
+
+    <link rel="stylesheet" href="../static/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <title>Vidsyra | Blogs - Explore Knowledge & Research</title>
+
+    <style>
+        /* Overall Scrolling Experience */
+        * {
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #101828;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #6366f1;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4338ca;
+        }
+
+        /* Main Loader Performance */
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg)
+            }
+        }
+
+        .load {
+            display: none;
+            width: 100px;
+            height: 100px;
+            margin: 48px auto;
+            border: dashed 7px #6366f1;
+            border-radius: 50%;
+            border-right-color: transparent;
+            border-left-color: transparent;
+            transition: all 0.5s ease-in;
+            animation-name: rotate;
+            animation-duration: 1.0s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-linear-to-b from-gray-900 via-indigo-950 to-gray-900 text-gray-100 selection:bg-indigo-500 selection:text-black antialiased transition-all">
+
+    <!-- navigation -->
+    <nav class="bg-gray-950/50 shadow-sm shadow-gray-800/30 sticky top-0 backdrop-blur-sm z-50">
+        <div class="max-w-6xl m-auto flex items-center justify-between gap-4 p-4">
+            <div class="select-none cursor-default">
+                <span class="px-2 py-1 rounded-sm bg-indigo-600 text-gray-950 font-bold inline-block text-center">
+                    V
+                </span>
+                <span class="px-2 text-indigo-500 font-bold">
+                    VIDSYRA
+                </span>
+            </div>
+            <div>
+                <a href="../index.html" class="px-2 text-white hover:text-indigo-400">
+                    Home
+                </a>
+                <a href="/pages/login.html" class="px-2 text-white hover:text-indigo-400">
+                    Login
+                </a>
+                <a href="#" class="px-2 text-white hover:text-indigo-400">
+                    About
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main content -->
+    <main class="max-w-6xl m-auto p-4">
+
+        <!-- Hero section -->
+        <section class="my-8 sm:my-12 text-center space-y-4">
+
+            <span
+                class="inline-block bg-indigo-600/20 text-indigo-400 text-sm font-semibold px-4 py-1.5 rounded-full cursor-default">
+                <i class="fa-solid fa-book-open mr-2"></i>
+                Vidsyra Journal
+            </span>
+
+            <h1 class="text-3xl sm:text-5xl font-bold tracking-tight">
+                Explore. Discover. <span class="text-indigo-500">Understand.</span>
+            </h1>
+
+            <p class="max-w-2xl mx-auto text-gray-400 text-sm sm:text-base leading-relaxed">
+                Explore knowledge, technology, science, education, and research
+                through carefully curated articles and AI-powered insights.
+            </p>
+
+            <!-- Search -->
+            <form action="#" method="get"
+                class="flex max-w-xl mx-auto bg-gray-900 border border-gray-700/50 focus-within:border-indigo-500/50 rounded-xl overflow-hidden">
+
+                <span class="px-4 py-3 text-gray-500">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+
+                <input type="search" name="q" placeholder="Search articles, topics, and keywords..."
+                    class="grow min-w-0 outline-none bg-transparent py-3 text-sm placeholder:text-gray-500">
+
+                <button type="submit" class="px-5 bg-indigo-600 hover:bg-indigo-500 transition-colors cursor-pointer">
+                    Search
+                </button>
+
+            </form>
+        </section>
+
+        <!-- Featured article -->
+        <section class="my-12 space-y-5">
+
+            <div class="flex items-center justify-between">
+                <h2 class="text-xl sm:text-2xl font-bold">
+                    Featured Article
+                </h2>
+
+                <span class="text-xs text-indigo-400 font-semibold uppercase tracking-wider">
+                    Editor's Pick
+                </span>
+            </div>
+
+            <article
+                class="grid grid-cols-1 md:grid-cols-2 overflow-hidden rounded-2xl border border-gray-700/50 bg-gray-900/70">
+
+                <!-- Featured image placeholder -->
+                <div
+                    class="relative min-h-56 md:min-h-80 bg-linear-to-br from-indigo-950 via-gray-900 to-blue-950 flex items-center justify-center overflow-hidden">
+
+                    <i class="fa-solid fa-brain text-7xl sm:text-9xl text-indigo-500/40"></i>
+
+                    <span
+                        class="absolute top-4 left-4 bg-indigo-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                        Artificial Intelligence
+                    </span>
+
+                </div>
+
+                <!-- Featured content -->
+                <div class="p-5 sm:p-8 flex flex-col justify-center gap-4">
+
+                    <div class="flex flex-wrap items-center gap-3 text-xs text-gray-500">
+                        <span>
+                            <i class="fa-regular fa-calendar mr-1"></i>
+                            Nov 14, 2026
+                        </span>
+
+                        <span>
+                            <i class="fa-regular fa-clock mr-1"></i>
+                            8 min read
+                        </span>
+                    </div>
+
+                    <h3 class="text-2xl sm:text-3xl font-bold leading-tight hover:text-indigo-400 transition-colors">
+                        The Future of Artificial Intelligence: Opportunities and Challenges
+                    </h3>
+
+                    <p class="text-gray-400 text-sm leading-relaxed line-clamp-3">
+                        Artificial intelligence is transforming the way we learn,
+                        work, communicate, and understand the world. Explore its
+                        possibilities, limitations, and implications for humanity.
+                    </p>
+
+                    <div class="flex items-center justify-between gap-3 pt-3 border-t border-gray-700/50">
+
+                        <div class="flex items-center gap-2">
+                            <div
+                                class="w-9 h-9 rounded-full bg-indigo-600/30 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+
+                            <div>
+                                <p class="text-sm font-semibold">Vidsyra Editorial</p>
+                                <p class="text-xs text-gray-500">Editorial Team</p>
+                            </div>
+                        </div>
+
+                        <a href="#"
+                            class="text-indigo-400 hover:text-indigo-300 text-sm font-semibold whitespace-nowrap">
+                            Read Article
+                            <i class="fa-solid fa-arrow-right ml-1"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+        <!-- Categories -->
+        <section class="my-12 space-y-5">
+
+            <div>
+                <h2 class="text-xl sm:text-2xl font-bold">
+                    Explore Categories
+                </h2>
+
+                <p class="text-gray-400 text-sm mt-1">
+                    Discover articles based on your interests.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap gap-2">
+
+                <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                    All Articles
+                </a>
+
+                <a href="#"
+                    class="bg-gray-900 hover:bg-indigo-600/20 hover:text-indigo-400 border border-gray-700/50 px-4 py-2 rounded-full text-sm transition-colors">
+                    Artificial Intelligence
+                </a>
+
+                <a href="#"
+                    class="bg-gray-900 hover:bg-indigo-600/20 hover:text-indigo-400 border border-gray-700/50 px-4 py-2 rounded-full text-sm transition-colors">
+                    Technology
+                </a>
+
+                <a href="#"
+                    class="bg-gray-900 hover:bg-indigo-600/20 hover:text-indigo-400 border border-gray-700/50 px-4 py-2 rounded-full text-sm transition-colors">
+                    Science
+                </a>
+
+                <a href="#"
+                    class="bg-gray-900 hover:bg-indigo-600/20 hover:text-indigo-400 border border-gray-700/50 px-4 py-2 rounded-full text-sm transition-colors">
+                    Education
+                </a>
+
+                <a href="#"
+                    class="bg-gray-900 hover:bg-indigo-600/20 hover:text-indigo-400 border border-gray-700/50 px-4 py-2 rounded-full text-sm transition-colors">
+                    Research
+                </a>
+
+                <a href="#"
+                    class="bg-gray-900 hover:bg-indigo-600/20 hover:text-indigo-400 border border-gray-700/50 px-4 py-2 rounded-full text-sm transition-colors">
+                    Business
+                </a>
+
+                <a href="#"
+                    class="bg-gray-900 hover:bg-indigo-600/20 hover:text-indigo-400 border border-gray-700/50 px-4 py-2 rounded-full text-sm transition-colors">
+                    Productivity
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Latest articles -->
+        <section class="my-12 space-y-6">
+
+            <div class="flex items-end justify-between gap-3">
+
+                <div>
+                    <h2 class="text-xl sm:text-2xl font-bold">
+                        Latest Articles
+                    </h2>
+
+                    <p class="text-gray-400 text-sm mt-1">
+                        Fresh perspectives, ideas, and knowledge.
+                    </p>
+                </div>
+
+                <span class="text-xs text-gray-500 whitespace-nowrap">
+                    120+ Articles
+                </span>
+
+            </div>
+
+
+            <!-- Article cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+
+                <!-- Article 1 -->
+                <article
+                    class="group rounded-xl overflow-hidden border border-gray-700/50 bg-gray-900/60 hover:border-indigo-500/60 transition-colors">
+
+                    <a href="#" class="block">
+
+                        <div
+                            class="h-48 bg-linear-to-br from-indigo-950 to-blue-950 flex items-center justify-center relative overflow-hidden">
+
+                            <i
+                                class="fa-solid fa-robot text-6xl text-indigo-400/50 group-hover:scale-110 transition-transform"></i>
+
+                            <span
+                                class="absolute top-3 left-3 bg-gray-950/80 text-indigo-300 text-xs px-3 py-1 rounded-full">
+                                AI & Technology
+                            </span>
+
+                        </div>
+
+                        <div class="p-5 space-y-3">
+
+                            <div class="flex items-center gap-3 text-xs text-gray-500">
+                                <span>Nov 12, 2026</span>
+                                <span>•</span>
+                                <span>6 min read</span>
+                            </div>
+
+                            <h3 class="font-bold text-lg leading-snug group-hover:text-indigo-400 transition-colors">
+                                Understanding Large Language Models and How They Work
+                            </h3>
+
+                            <p class="text-sm text-gray-400 line-clamp-3 leading-relaxed">
+                                Discover the technology behind modern AI assistants,
+                                language models, and intelligent applications.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+                    <div class="px-5 pb-5 flex items-center justify-between text-xs border-t border-gray-800 pt-3">
+
+                        <span class="text-gray-500">
+                            <i class="fa-regular fa-user mr-1"></i>
+                            Editorial Team
+                        </span>
+
+                        <a href="#" class="text-indigo-400 font-semibold hover:text-indigo-300">
+                            Read More →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Article 2 -->
+                <article
+                    class="group rounded-xl overflow-hidden border border-gray-700/50 bg-gray-900/60 hover:border-indigo-500/60 transition-colors">
+
+                    <a href="#" class="block">
+
+                        <div
+                            class="h-48 bg-linear-to-br from-emerald-950 to-teal-950 flex items-center justify-center relative overflow-hidden">
+
+                            <i
+                                class="fa-solid fa-dna text-6xl text-emerald-400/50 group-hover:scale-110 transition-transform"></i>
+
+                            <span
+                                class="absolute top-3 left-3 bg-gray-950/80 text-emerald-300 text-xs px-3 py-1 rounded-full">
+                                Natural Sciences
+                            </span>
+
+                        </div>
+
+                        <div class="p-5 space-y-3">
+
+                            <div class="flex items-center gap-3 text-xs text-gray-500">
+                                <span>Nov 10, 2026</span>
+                                <span>•</span>
+                                <span>9 min read</span>
+                            </div>
+
+                            <h3 class="font-bold text-lg leading-snug group-hover:text-indigo-400 transition-colors">
+                                Exploring the Hidden Complexity of Human Biology
+                            </h3>
+
+                            <p class="text-sm text-gray-400 line-clamp-3 leading-relaxed">
+                                An introduction to the remarkable biological systems
+                                that make the human body function.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+                    <div class="px-5 pb-5 flex items-center justify-between text-xs border-t border-gray-800 pt-3">
+
+                        <span class="text-gray-500">
+                            <i class="fa-regular fa-user mr-1"></i>
+                            Editorial Team
+                        </span>
+
+                        <a href="#" class="text-indigo-400 font-semibold hover:text-indigo-300">
+                            Read More →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Article 3 -->
+                <article
+                    class="group rounded-xl overflow-hidden border border-gray-700/50 bg-gray-900/60 hover:border-indigo-500/60 transition-colors">
+
+                    <a href="#" class="block">
+
+                        <div
+                            class="h-48 bg-linear-to-br from-amber-950 to-orange-950 flex items-center justify-center relative overflow-hidden">
+
+                            <i
+                                class="fa-solid fa-chart-line text-6xl text-amber-400/50 group-hover:scale-110 transition-transform"></i>
+
+                            <span
+                                class="absolute top-3 left-3 bg-gray-950/80 text-amber-300 text-xs px-3 py-1 rounded-full">
+                                Business & Finance
+                            </span>
+
+                        </div>
+
+                        <div class="p-5 space-y-3">
+
+                            <div class="flex items-center gap-3 text-xs text-gray-500">
+                                <span>Nov 08, 2026</span>
+                                <span>•</span>
+                                <span>7 min read</span>
+                            </div>
+
+                            <h3 class="font-bold text-lg leading-snug group-hover:text-indigo-400 transition-colors">
+                                Understanding the Global Economy in the Digital Age
+                            </h3>
+
+                            <p class="text-sm text-gray-400 line-clamp-3 leading-relaxed">
+                                Explore the forces shaping modern economies,
+                                international markets, and financial systems.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+                    <div class="px-5 pb-5 flex items-center justify-between text-xs border-t border-gray-800 pt-3">
+
+                        <span class="text-gray-500">
+                            <i class="fa-regular fa-user mr-1"></i>
+                            Editorial Team
+                        </span>
+
+                        <a href="#" class="text-indigo-400 font-semibold hover:text-indigo-300">
+                            Read More →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Article 4 -->
+                <article
+                    class="group rounded-xl overflow-hidden border border-gray-700/50 bg-gray-900/60 hover:border-indigo-500/60 transition-colors">
+
+                    <a href="#" class="block">
+
+                        <div
+                            class="h-48 bg-linear-to-br from-violet-950 to-purple-950 flex items-center justify-center relative overflow-hidden">
+
+                            <i
+                                class="fa-solid fa-atom text-6xl text-violet-400/50 group-hover:scale-110 transition-transform"></i>
+
+                            <span
+                                class="absolute top-3 left-3 bg-gray-950/80 text-violet-300 text-xs px-3 py-1 rounded-full">
+                                Physics
+                            </span>
+
+                        </div>
+
+                        <div class="p-5 space-y-3">
+
+                            <div class="flex items-center gap-3 text-xs text-gray-500">
+                                <span>Nov 06, 2026</span>
+                                <span>•</span>
+                                <span>10 min read</span>
+                            </div>
+
+                            <h3 class="font-bold text-lg leading-snug group-hover:text-indigo-400 transition-colors">
+                                Quantum Computing: A New Era of Computation
+                            </h3>
+
+                            <p class="text-sm text-gray-400 line-clamp-3 leading-relaxed">
+                                Learn about qubits, quantum mechanics, and the
+                                potential of next-generation computing.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+                    <div class="px-5 pb-5 flex items-center justify-between text-xs border-t border-gray-800 pt-3">
+
+                        <span class="text-gray-500">
+                            <i class="fa-regular fa-user mr-1"></i>
+                            Editorial Team
+                        </span>
+
+                        <a href="#" class="text-indigo-400 font-semibold hover:text-indigo-300">
+                            Read More →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Article 5 -->
+                <article
+                    class="group rounded-xl overflow-hidden border border-gray-700/50 bg-gray-900/60 hover:border-indigo-500/60 transition-colors">
+
+                    <a href="#" class="block">
+
+                        <div
+                            class="h-48 bg-linear-to-br from-cyan-950 to-sky-950 flex items-center justify-center relative overflow-hidden">
+
+                            <i
+                                class="fa-solid fa-graduation-cap text-6xl text-cyan-400/50 group-hover:scale-110 transition-transform"></i>
+
+                            <span
+                                class="absolute top-3 left-3 bg-gray-950/80 text-cyan-300 text-xs px-3 py-1 rounded-full">
+                                Education
+                            </span>
+
+                        </div>
+
+                        <div class="p-5 space-y-3">
+
+                            <div class="flex items-center gap-3 text-xs text-gray-500">
+                                <span>Nov 04, 2026</span>
+                                <span>•</span>
+                                <span>5 min read</span>
+                            </div>
+
+                            <h3 class="font-bold text-lg leading-snug group-hover:text-indigo-400 transition-colors">
+                                How Technology Is Transforming Modern Education
+                            </h3>
+
+                            <p class="text-sm text-gray-400 line-clamp-3 leading-relaxed">
+                                Discover how digital learning, AI, and online
+                                resources are changing educational experiences.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+                    <div class="px-5 pb-5 flex items-center justify-between text-xs border-t border-gray-800 pt-3">
+
+                        <span class="text-gray-500">
+                            <i class="fa-regular fa-user mr-1"></i>
+                            Editorial Team
+                        </span>
+
+                        <a href="#" class="text-indigo-400 font-semibold hover:text-indigo-300">
+                            Read More →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Article 6 -->
+                <article
+                    class="group rounded-xl overflow-hidden border border-gray-700/50 bg-gray-900/60 hover:border-indigo-500/60 transition-colors">
+
+                    <a href="#" class="block">
+
+                        <div
+                            class="h-48 bg-linear-to-br from-rose-950 to-pink-950 flex items-center justify-center relative overflow-hidden">
+
+                            <i
+                                class="fa-solid fa-earth-americas text-6xl text-rose-400/50 group-hover:scale-110 transition-transform"></i>
+
+                            <span
+                                class="absolute top-3 left-3 bg-gray-950/80 text-rose-300 text-xs px-3 py-1 rounded-full">
+                                Environment
+                            </span>
+
+                        </div>
+
+                        <div class="p-5 space-y-3">
+
+                            <div class="flex items-center gap-3 text-xs text-gray-500">
+                                <span>Nov 02, 2026</span>
+                                <span>•</span>
+                                <span>8 min read</span>
+                            </div>
+
+                            <h3 class="font-bold text-lg leading-snug group-hover:text-indigo-400 transition-colors">
+                                Understanding Climate Change and Our Planet's Future
+                            </h3>
+
+                            <p class="text-sm text-gray-400 line-clamp-3 leading-relaxed">
+                                Explore environmental challenges, scientific
+                                evidence, and potential solutions for sustainability.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+                    <div class="px-5 pb-5 flex items-center justify-between text-xs border-t border-gray-800 pt-3">
+
+                        <span class="text-gray-500">
+                            <i class="fa-regular fa-user mr-1"></i>
+                            Editorial Team
+                        </span>
+
+                        <a href="#" class="text-indigo-400 font-semibold hover:text-indigo-300">
+                            Read More →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- Pagination -->
+            <div class="flex flex-wrap justify-center items-center gap-2 pt-6">
+
+                <a href="#"
+                    class="px-3 py-2 rounded-lg border border-gray-700 text-gray-500 hover:text-white hover:border-indigo-500">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+
+                <a href="#" class="px-4 py-2 rounded-lg bg-indigo-600 text-white font-semibold">
+                    1
+                </a>
+
+                <a href="#"
+                    class="px-4 py-2 rounded-lg border border-gray-700 hover:bg-indigo-600/20 hover:border-indigo-500">
+                    2
+                </a>
+
+                <a href="#"
+                    class="px-4 py-2 rounded-lg border border-gray-700 hover:bg-indigo-600/20 hover:border-indigo-500">
+                    3
+                </a>
+
+                <span class="text-gray-500 px-1">...</span>
+
+                <a href="#"
+                    class="px-4 py-2 rounded-lg border border-gray-700 hover:bg-indigo-600/20 hover:border-indigo-500">
+                    10
+                </a>
+
+                <a href="#"
+                    class="px-3 py-2 rounded-lg border border-gray-700 hover:text-white hover:border-indigo-500">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Newsletter -->
+        <section
+            class="my-16 rounded-2xl border border-indigo-500/20 bg-linear-to-br from-indigo-950/80 to-gray-900 p-6 sm:p-10 text-center space-y-4">
+
+            <i class="fa-regular fa-envelope text-3xl text-indigo-400"></i>
+
+            <h2 class="text-2xl sm:text-3xl font-bold">
+                Never Stop <span class="text-indigo-400">Learning.</span>
+            </h2>
+
+            <p class="text-gray-400 text-sm max-w-xl mx-auto">
+                Stay informed with the latest articles, research,
+                discoveries, and technology insights.
+            </p>
+
+            <form action="#" method="post" class="flex flex-col sm:flex-row max-w-md mx-auto gap-2">
+
+                <input type="email" name="email" placeholder="Enter your email address" required
+                    class="grow min-w-0 bg-gray-950 border border-gray-700 rounded-lg px-4 py-3 outline-none focus:border-indigo-500 text-sm placeholder:text-gray-500">
+
+                <button type="submit"
+                    class="bg-indigo-600 hover:bg-indigo-500 px-5 py-3 rounded-lg font-semibold text-sm transition-colors">
+                    Subscribe
+                </button>
+
+            </form>
+
+            <p class="text-xs text-gray-500">
+                No spam. Just knowledge worth exploring.
+            </p>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
