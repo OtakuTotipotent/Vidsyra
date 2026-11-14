@@ -16,7 +16,7 @@
 </head>
 
 <body
-    class="bg-gray-900 text-gray-100 w-dvw h-dvh selection:bg-indigo-500 selection:text-black antialiased transition-all">
+    class="bg-linear-to-b from-gray-900 via-indigo-950 to-gray-900 text-gray-100 selection:bg-indigo-500 selection:text-black antialiased transition-all">
 
     <!-- navigation -->
     <nav class=" bg-gray-950/50 shadow-sm shadow-gray-800/30">
@@ -42,21 +42,21 @@
 
     <!-- login form -->
     <main class="flex items-center justify-center">
-        <form class="bg-gray-950 p-8 shadow-md rounded-2xl max-w-md w-full mt-16 space-y-4">
+        <form class="border border-gray-700/80 p-8 shadow-md rounded-2xl max-w-md w-full mt-16 space-y-4">
             <h2 class="text-center text-indigo-500 font-bold text-2xl">Welcome to Vidsyra</h2>
 
             <!-- username -->
             <div class="flex flex-col gap-3">
                 <label for="username" class="font-medium">Username</label>
                 <input type="text" name="username" id="username" placeholder="Enter your username here" required
-                    class="bg-gray-800/80 font-semibold rounded-sm px-3 py-2 placeholder:text-gray-500 placeholder:font-normal outline-none text-center">
+                    class="bg-gray-900/50 focus:bg-gray-900 font-semibold rounded-sm px-3 py-2 placeholder:text-gray-500 placeholder:font-normal outline-none text-center">
             </div>
 
             <!-- password -->
             <div class="flex flex-col gap-3">
                 <label for="password" class="font-medium">Password</label>
                 <input type="password" name="password" id="password" placeholder="Enter your password here" required
-                    class="bg-gray-800/80 font-semibold rounded-sm px-3 py-2 placeholder:text-gray-500 placeholder:font-normal outline-none text-center">
+                    class="bg-gray-900/50 focus:bg-gray-900 font-semibold rounded-sm px-3 py-2 placeholder:text-gray-500 placeholder:font-normal outline-none text-center">
             </div>
 
             <!-- button -->
