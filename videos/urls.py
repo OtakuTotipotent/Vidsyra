@@ -8,4 +8,14 @@ urlpatterns = [
         views.home,
         name="home",
     ),
+    path(
+        "blogs/",
+        views.blogs,
+        name="blogs",
+    ),
+    path(
+        "blog-details/",
+        views.blogDetails,
+        name="blog-details",
+    ),
 ]

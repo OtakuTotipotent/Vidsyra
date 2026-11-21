@@ -37,3 +37,23 @@ def home(request):
             "suggested_videos": suggested_videos,
         },
     )
+
+
+def blogs(request):
+    return render(
+        request,
+        "pages/blogs.html",
+        {
+            "pageTitle": "Blogs Written Out of Pure Curiosity",
+        },
+    )
+
+
+def blogDetails(request):
+    return render(
+        request,
+        "pages/blog-details.html",
+        {
+            "pageTitle": "All About This Dummy Blog",
+        },
+    )
